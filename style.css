@@ -1,0 +1,13 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body > * {
+  margin: .5rem;
+  padding: .25rem;
+}
+
+.save-btn {
+  display: block;
+}
