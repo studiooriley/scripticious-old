@@ -1,13 +1,142 @@
-html {
-  height: 100%;
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5rem;
+  place-items: center;
+  background: #fff3d5;
+  color: #333333;
+}
+
+h1 {
+  color: goldenrod;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+  margin: 0;
+}
+
+.page {
+  width: 50vw;
+  height: 75vw;
+  margin: 1rem auto;
+  padding: 10vw;
+  border-radius: .3rem;
+  box-shadow: 0 0 .3rem rgba(0, 0, 0, .2);
+  font-size: 12px;
+  font-family: Courier;
+  background: #fffaec;
+}
+
+[contenteditable]:focus {
+  outline: none;
+}
+
+button:not(toolbar button) {
+  text-align: center;
+  padding: .5rem 1rem;
+  background: #fff3d5;
+  color: goldenrod;
+  border: .1rem solid goldenrod;
+  border-radius: .5rem;
+}
+
+toolbar {
+  width: 3rem;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  place-items: center;
+  justify-content: center;
+  left: 0;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: .5rem 0rem;
+  border-radius: 0 .75rem .75rem 0;
+  background: #fffaec;
+  box-shadow: 0 0 .3rem rgba(0, 0, 0, .2);
+}
+
+toolbar button {
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  text-align: center;
+  background: #fff3d5;
+  color: goldenrod;
+  border: .1rem solid goldenrod;
+  border-radius: .5rem;
+}
+
+/* TOOLBAR */ 
+
+.screenplay {
+  /* Base styles for the screenplay text area */
   width: 100%;
 }
 
-body > * {
-  margin: .5rem;
-  padding: .25rem;
+.title {
+  display: block;
+  width: 100%;
+  font-size:  20px;
+  font-weight: bold;
+  text-decoration: none; 
+  text-transform: none;
+  margin: 1em 0;
+  text-align: center;
 }
 
-.save-btn {
+.action {
   display: block;
+  width: 100%;
+  font-size:  12px;
+  font-weight: normal;
+  text-decoration: none; 
+  text-transform: none;
+  margin: 1em 0;
+  text-align: left;
+}
+
+.character_intro {
+  display: inline;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none; 
+  text-transform: uppercase;
+  margin: 1em 0;
+  text-align: left;
+}
+
+.character {
+  display: block;
+  width: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none; 
+  text-transform: uppercase;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.dialogue {
+  display: block;
+  width: 60%;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none; 
+  text-transform: none;
+  margin: 1em auto;
+  text-align: left;
 }
